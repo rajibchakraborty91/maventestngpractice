@@ -45,7 +45,7 @@ import com.google.common.collect.Lists;
 public class BaseTestNg  {	
 	WebDriver dv;
 	WebDriver di;
-String me;
+String m="rajib";
 	WebDriver dvx;
 	
 	public static int count=1;
