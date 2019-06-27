@@ -56,6 +56,10 @@ String m="rajib";
 	public void startme() throws AWTException,IOException
 	{
 		System.out.println("Execution starts now!!!!");
+		
+		/*DesiredCapabilities capa = DesiredCapabilities.chrome();
+		
+		capa.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);*/
 		/*------------Handle SSL alert--------------------
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);*/

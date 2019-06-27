@@ -31,7 +31,7 @@ public class GoogleStep {
 	
 	@Given("^Open google com$")
 	public void open_google_com() throws Throwable {
-	    // Write code here that turns the phrase above into concrete actions
+	    // Write code here that turns the phrases above into concrete actions
 		cfObj.openUrl();
 	}
 	

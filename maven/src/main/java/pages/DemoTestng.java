@@ -82,7 +82,7 @@ public class DemoTestng extends BaseTestNg {
 	}
 	
 	
-	@Test(groups = {"regre","abc"},dataProvider="testing",priority=-1)
+	@Test(groups = {"regre","abc"},dataProvider="readExcel",dataProviderClass=DataProviderExcelClass.class, priority=-1)
 	public void test4(String susername,String stitle) throws IOException
 	{
 		System.out.println("fourth test case");
@@ -102,7 +102,7 @@ public class DemoTestng extends BaseTestNg {
 		
 		SoftAssert sa = new SoftAssert();
 		
-		sa.fail();
+		sa.assertTrue(1>2);
 		
 		System.out.println("---------"+stitle);
 		
