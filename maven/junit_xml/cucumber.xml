@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="105.920649">
+<testcase classname="google.feature" name="Google" time="50.023052">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:31)&#13;&#10;&#9;at StepDefinitions.GoogleStep.failit(GoogleStep.java:59)&#13;&#10;&#9;at ✽.Then Fail it(google.feature:9)&#13;&#10;"><![CDATA[Given Open google com.......................................................passed
+Then User enter search term.................................................passed
+Then user clicks Search button..............................................passed
+Then Fail it................................................................failed
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at StepDefinitions.GoogleStep.failit(GoogleStep.java:59)
+	at ✽.Then Fail it(google.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="google.feature" name="Googletest2" time="28.254867">
+<system-out><![CDATA[Given Open google com.......................................................passed
+Then User enter search term.................................................passed
+Then user clicks Search button..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="google.feature" name="Googletest3" time="27.64273">
+<failure message="junit.framework.AssertionFailedError&#13;&#10;&#9;at junit.framework.Assert.fail(Assert.java:55)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:22)&#13;&#10;&#9;at junit.framework.Assert.assertTrue(Assert.java:31)&#13;&#10;&#9;at StepDefinitions.GoogleStep.failit(GoogleStep.java:59)&#13;&#10;&#9;at ✽.Then Fail it(google.feature:22)&#13;&#10;"><![CDATA[Given Open google com.......................................................passed
+Then User enter search term.................................................passed
+Then user clicks Search button..............................................passed
+Then Fail it................................................................failed
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at StepDefinitions.GoogleStep.failit(GoogleStep.java:59)
+	at ✽.Then Fail it(google.feature:22)
+]]></failure>
+</testcase>
+</testsuite>

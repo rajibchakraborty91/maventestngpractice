@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="laptopcompany" value="dell"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="pcowner" value="rajib"/>
+  <listeners>
+    <listener class-name="pages.MyListenerClass"/>
+  </listeners>
+  <test name="Test">
+    <groups>
+      <run>
+        <include name="regre"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pages.DemoTestng"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="tests">
+    <groups>
+      <run>
+        <include name="regre"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pages.DemoTestng">
+        <methods>
+          <include name="test4" invocation-numbers="0"/>
+          <include name="Finishme"/>
+          <include name="setupdriver"/>
+          <include name="startme"/>
+          <include name="startmethod"/>
+          <include name="takescreenshot"/>
+        </methods>
+      </class> <!-- pages.DemoTestng -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

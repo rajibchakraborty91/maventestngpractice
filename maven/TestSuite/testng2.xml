@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Suite" parallel="tests" > 
+<parameter name = "browser" value = "chrome" />
+   <parameter name = "pcowner" value = "rajib" />
+    <parameter name = "laptopcompany" value = "dell" />
+<listeners>
+<listener class-name="pages.MyListenerClass"/>
+</listeners>
+
+  <test name="Test">
+  <groups>
+  		<run>
+  		<include name="regre" />
+  		</run>
+  	</groups>
+    <classes>
+      <class name="pages.DemoTestng"/>
+    </classes>
+  </test> <!-- Test -->
+  
+ 
+  
+</suite> <!-- Suite -->

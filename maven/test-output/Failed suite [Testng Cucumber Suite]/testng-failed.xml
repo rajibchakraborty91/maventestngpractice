@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Testng Cucumber Suite]]">
+  <test name="Run All Tests">
+    <classes>
+      <class name="MyRunner.TestRunner"/>
+    </classes>
+  </test> <!-- Run All Tests -->
+  <test name="Run All Tests(failed)">
+    <classes>
+      <class name="MyRunner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- MyRunner.TestRunner -->
+    </classes>
+  </test> <!-- Run All Tests(failed) -->
+  <test name="Run All Tests(failed)">
+    <classes>
+      <class name="MyRunner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- MyRunner.TestRunner -->
+    </classes>
+  </test> <!-- Run All Tests(failed) -->
+  <test name="Run All Tests(failed)(failed)">
+    <classes>
+      <class name="MyRunner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- MyRunner.TestRunner -->
+    </classes>
+  </test> <!-- Run All Tests(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Testng Cucumber Suite]] -->
