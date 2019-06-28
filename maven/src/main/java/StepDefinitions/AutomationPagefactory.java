@@ -35,10 +35,13 @@ public class AutomationPagefactory {
 		cfObjPagefac.openUrl();
 	}
 	
+	
 
-	@Given("^click on Tshirt$")
-	public void clickonTshirt() throws Throwable {
+	@Given("^click on Tshirt as \"(.*)\"$")
+	public void clickonTshirt(String raj) throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
+	
+		System.out.println(raj);
 		
 	}
 	

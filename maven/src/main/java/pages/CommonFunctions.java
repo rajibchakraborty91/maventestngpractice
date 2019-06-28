@@ -59,6 +59,7 @@ public class CommonFunctions {
 		
 		try
 		{
+			
 		prop.load(new FileInputStream(new File(properties)));
 		}
 		catch(Exception e)
@@ -71,6 +72,8 @@ public class CommonFunctions {
 		driver = new ChromeDriver();
 		
 		driver.manage().window().maximize();
+		
+		System.out.println(prop.getProperty("url"));
 		  
 	}
 	
@@ -124,6 +127,10 @@ public class CommonFunctions {
 		 
 		
 		List<WebElement> li =   driver.findElements(By.tagName("a"));
+		
+		Iterator<WebElement> it = li.iterator();
+		
+		//it.next().getAttribute("href")
 		
 		
 		
@@ -221,11 +228,7 @@ public class CommonFunctions {
 		System.out.println(document.getNumberOfPages());
 		
 		assertTrue((pdftext.contains("aXmag")), "PASSED");
-	
-		
 
-		
-		
 		
 	}
 	

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.concurrent.TimeUnit;
 import java.util.logging.FileHandler;
 
 import org.apache.commons.io.FileUtils;
@@ -17,7 +18,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
@@ -145,6 +150,12 @@ public class DemoTestng extends BaseTestNg {
 		
 		
 		//Assert.assertTrue(1>2);
+		/*WebDriverWait webp = new WebDriverWait(dv, 20);
+		
+		webp.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("")));*/
+		
+		
+		
 		
 		
 	}

@@ -12,9 +12,7 @@ Then Fail it
 Scenario: PageFactory
 
 Given Open automation site
-When click on Tshirt
-//li[3]/a[text()='T-shirts']
-//span[contains(text(),'Add to cart')]
+When click on Tshirt as "rajib"
 Then click on Add to cart
 
 
