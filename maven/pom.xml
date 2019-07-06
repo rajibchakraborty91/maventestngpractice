@@ -6,20 +6,32 @@
     <!-- To define the plugin version in your parent POM -->
     <pluginManagement>
       <plugins>
+     
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.19.1</version>
+        </plugin>
+          <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
         <version>3.0.0-M3</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>D:\Java Documents\text\maven\TestSuite\testng2.xml</suiteXmlFile>
+            <suiteXmlFile>C:\Users\Rajib\git\maventestngpractice\maven\TestSuite\testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
         </plugin>
-       </plugins>
+        
+  </plugins>
     </pluginManagement>
     <!-- To use the plugin goals in your POM or parent POM -->
   </build>
+  
+  
+  
+  
+  
 	<groupId>FreeCrmBDDFramework</groupId>
 	<artifactId>FreeCrmBDDFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>

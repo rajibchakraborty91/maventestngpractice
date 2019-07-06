@@ -44,7 +44,7 @@ import gherkin.deps.net.iharder.Base64.InputStream;
 public class CommonFunctions {
 	
 	static WebDriver driver;
-	private final String properties="D:\\Java Documents\\text\\maven\\src\\main\\java\\application.properties" ;
+	private final String properties="C:\\Users\\Rajib\\git\\maventestngpractice\\maven\\src\\main\\java\\application.properties" ;
 	File file;
 	FileInputStream fnp;
 	Properties prop ;

@@ -10,7 +10,7 @@ public class Retry implements IRetryAnalyzer{
 	
 	public boolean retry(ITestResult result)
 	{
-	;
+	
 		
 		if  (count < retryLimit)
 		{

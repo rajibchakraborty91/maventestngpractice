@@ -7,7 +7,7 @@ public class DataProviderExcelClass {
 	@DataProvider(name="fromExcel")
 	public Object[][] readfromExcel()
 	{
-		return new Object[][] {{"username"},{"password"}};
+		return new Object[][] {{"hey"},{"yaa"}};
 	}
 	
 	

@@ -28,7 +28,9 @@ import org.testng.asserts.SoftAssert;
 
 
 //@Listeners(MyListenerClass.class)
+
 @Listeners({MyListenerClass.class})
+
 public class DemoTestng extends BaseTestNg {
 	
 
@@ -50,14 +52,14 @@ public class DemoTestng extends BaseTestNg {
 	
 	
 	@Parameters("laptopcompany")
- @Test(groups = { "regre" }, retryAnalyzer = MyTransformer.class,priority=2,enabled=true)
+ @Test(groups = { "regre" },priority=2,enabled=true)
 	
 	public void test2(String laptopcompany)
 	{
 		System.out.println("Second test case");
 
 		dv.get("https://www.onlinesbi.com");
-		//Assert.assertTrue(1>2);
+		Assert.assertTrue(1>2);
 		System.out.println(dv.getTitle());
 		System.out.println("-------------------------"+laptopcompany+"--------------------");
 	}
@@ -87,7 +89,7 @@ public class DemoTestng extends BaseTestNg {
 	}
 	
 	
-	@Test(groups = {"regre","abc"},dataProvider="readExcel",dataProviderClass=DataProviderExcelClass.class, priority=-1)
+	@Test(groups = {"regre"},dataProvider="testing", priority=-1)
 	public void test4(String susername,String stitle) throws IOException
 	{
 		System.out.println("fourth test case");
@@ -101,7 +103,7 @@ public class DemoTestng extends BaseTestNg {
 		
 		
 		//-----------hard assert------------------
-		Assert.assertTrue(1>2);
+		//Assert.assertTrue(1>2);
 		
 		//------------------soft assert-------------
 		

@@ -13,13 +13,13 @@ public class MyListenerClass extends BaseTestNg implements ITestListener {
 
 	public void onFinish(ITestContext arg0) {
 		// TODO Auto-generated method stub
-		System.out.println("Test casse execution has been finished");
+		System.out.println("Test casse execution has been finished"+arg0.getClass());
 	}
 
 
 	public void onStart(ITestContext arg0) {
 		// TODO Auto-generated method stub
-	
+		System.out.println("Test case execution has been started------"+arg0.getClass());
 	}
 
 	
@@ -32,7 +32,7 @@ public class MyListenerClass extends BaseTestNg implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		System.out.println(result.getStatus());
-	
+
 	}
 	
 	public void onTestSkipped(ITestResult arg0) {
@@ -42,7 +42,7 @@ public class MyListenerClass extends BaseTestNg implements ITestListener {
 
 		public void onTestStart(ITestResult arg0) {
 		// TODO Auto-generated method stub
-		System.out.println("Test case execution has been started");
+		System.out.println("Test case execution has been started------------lol----"+arg0.getName());
 		
 	}
 

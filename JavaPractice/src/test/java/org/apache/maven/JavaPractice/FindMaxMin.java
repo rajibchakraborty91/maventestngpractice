@@ -11,7 +11,7 @@ public class FindMaxMin {
 		int lowest = arr[0];
 		int second=arr[1];
 		
-		//--------------------
+		//--------------------size of an aarryyyy
 		int count = 0;
 		for (int x : arr)
 		{

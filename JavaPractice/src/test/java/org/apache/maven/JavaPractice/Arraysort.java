@@ -13,7 +13,12 @@ public class Arraysort {
 		
 		System.out.println(arr[arr.length-1]);
 		
-		System.out.println(arr[0]);
+		//System.out.println(arr[0]);
+		
+		for (int a : arr)
+		{
+			System.out.println(a);
+		}
 		
 		
 	}
